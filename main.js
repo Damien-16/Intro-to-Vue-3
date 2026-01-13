@@ -1,10 +1,10 @@
 const product = 'Socks'
 const app = Vue.createApp({
-    data(){
-        return{
-            product : 'Boots',
-
-            description: 'A warn fuzzy pair of socks.'
+    data() {
+        return {
+            product: 'Socks',
+            image: './assets/images/socks_green.jpg',
+            url: 'https://www.etml.ch/'
         }
     }
 });
