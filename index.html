@@ -20,7 +20,10 @@
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
-            <a :href="url">L?ETML</a>
+            <p v-if="inventory > 10">En stock</p>
+            <p v-else-if="inventory <= 10 && inventory > 0">Peu en stock</p>
+            <p v-else>Pas en stock</p>
+            <p v-if="onSale">On Sale!</p>
           </div>
         </div>
       </div>
