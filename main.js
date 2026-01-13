@@ -12,5 +12,18 @@ const app = Vue.createApp({
                 {id: 2235, color: 'blue'}
             ]
         }
+    },
+    methods: {
+        addToCart(){
+            this.cart +=1
+        },
+        clearToCart(){
+            if (this.cart >= 1) {
+                this.cart -= 1
+            }
+        },
+        updateImage(variantImage){
+            this.image = variantImage
+        }
     }
 });
